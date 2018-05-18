@@ -18,12 +18,13 @@ description = "Default layout"
     </head>
     <body>
 
-
+        {% partial 'header' %}
         <!-- Content -->
-        <section id="layout-content">
+        <section id="layout-content" class="container">
             {% page %}
         </section>
-
+        
+        {% partial 'footer' %}
 
 
         <!-- Scripts -->
