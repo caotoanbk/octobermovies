@@ -25,15 +25,22 @@ class Movie extends Model
      * @var string The database table used by the model.
      */
     public $table = 'watchlearn_movies_';
-    protected $jsonable = ['actors'];
+    // protected $jsonable = ['actors'];
 
     /* relation */
+
     public $belongsToMany = [
         'genres' => [
             'Watchlearn\Movies\Models\Genre',
             'table' => 'watchlearn_movies_movies_genres',
             'order' => 'genre_title'
+        ],
+        'actors' => [
+            'Watchlearn\Movies\Models\Actor',
+            'table' => 'watchlearn_movies_actors_movies',
+            'order' => 'name'
         ]
+
     ];
     public $attachOne = [
         'poster' => 'System\Models\File'

@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'smtp.mailgun.org',
+    'host' => 'smtp.gmail.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'username' => null,
+    'username' => 'caotoanbk@gmail.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +94,7 @@ return [
     |
     */
 
-    'password' => null,
+    'password' => 'caotoanhp90',
 
     /*
     |--------------------------------------------------------------------------
@@ -108,5 +108,9 @@ return [
     */
 
     'sendmail' => '/usr/sbin/sendmail -bs',
+    'to' => [
+        'address' => 'tony.cao@ginex.com.vn',
+        'name' => 'Catch all email'
+    ]
 
 ];
